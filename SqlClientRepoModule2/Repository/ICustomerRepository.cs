@@ -10,9 +10,10 @@ namespace SqlClientRepoModule2.Repository
         public Customer GetCustomer(int id);
         public List<Customer> GetAllCustomers();
         public Customer GetCustomerByName(string name);
-        public bool AddNewCustomer(Customer customer);
-        public bool UpdateCustomer(Customer customer);
-        public List<Customer> GetCustomersByCountry();
+        public List<Customer>ReturnPageOfCustomers(int limit, int offset);
+        public Customer AddNewCustomer(Customer customer);
+        public Customer UpdateCustomer(Customer customer);
+        //public List<Customer> GetCustomersByCountry();
         public List<Customer> GetHighestSpender();
         public List<Customer> GetMostPopularGenre();
 

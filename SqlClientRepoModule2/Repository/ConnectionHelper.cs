@@ -10,7 +10,7 @@ namespace SqlClientRepoModule2.Repository
         public static string GetConnectionstring()
         {
             SqlConnectionStringBuilder connectionStringBuilder = new SqlConnectionStringBuilder();
-            connectionStringBuilder.DataSource = "5CG05206QT\\SQLEXPRESS";
+            connectionStringBuilder.DataSource = "5CG05206QY\\SQLEXPRESS";
             connectionStringBuilder.InitialCatalog = "Chinook";
             connectionStringBuilder.IntegratedSecurity = true;
             return connectionStringBuilder.ConnectionString;
