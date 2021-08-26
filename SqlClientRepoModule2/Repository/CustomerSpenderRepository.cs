@@ -8,6 +8,11 @@ namespace SqlClientRepoModule2.Repository
 {
     public class CustomerSpenderRepository : ICustomerSpenderRepository
     {
+        /// <summary>
+        /// A method that gets the highest spenders from the Chinook database and
+        /// returns the all the highest spenders in descending order
+        /// </summary>
+        /// <returns></returns>
         public List<CustomerSpender> GetCustomersBySpendAmount()
         {
             List<CustomerSpender> customerList = new List<CustomerSpender>();

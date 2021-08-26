@@ -8,8 +8,13 @@ namespace SqlClientRepoModule2
 {
     public class Program
     {
+        /// <summary>
+        /// Contains test calls for functions
+        /// </summary>
+        /// <param name="args"></param>
         public static void Main(string[] args)
         {
+
             ICustomerRepository repository = new CustomerRepository();
             ICustomersCountryRepository countryRepository = new CustomerCountryRepository();
             ICustomerSpenderRepository spenderRepository = new CustomerSpenderRepository();
@@ -37,12 +42,17 @@ namespace SqlClientRepoModule2
             //};
 
             //TestAddCustomer(repository, customer);
-            //TestUpdateCustomer(repository, newcus);
+            //TestUpdateCustomerFirstName(repository, newcus);
             //TestCustomerCountryDescending(countryRepository);
             //TestCustomerSpendersDescending(spenderRepository);
             //TestCustomerPopularGenreDescending(genreRepository, 12);
 
         }
+        /// <summary>
+        /// Contains nine test methods to test the functionality of all methods in
+        ///the repository folder.
+        /// </summary>
+        /// <param name="repository"></param>
         static void TestSelectAll(ICustomerRepository repository)
         {
             PrintCustomers(repository.GetAllCustomers());
@@ -63,9 +73,9 @@ namespace SqlClientRepoModule2
         {
             PrintCustomer(repository.AddNewCustomer(customer));
         }
-        static void TestUpdateCustomer(ICustomerRepository repository, Customer newcus)
+        static void TestUpdateCustomerFirstName(ICustomerRepository repository, Customer newcus)
         {
-            PrintCustomer(repository.UpdateCustomer(newcus));
+            PrintCustomer(repository.UpdateCustomerFirstName(newcus));
         }
         static void TestCustomerCountryDescending(ICustomersCountryRepository countryRepository)
         {
@@ -79,6 +89,10 @@ namespace SqlClientRepoModule2
         {
             PrintCustomerByPopularGenre(genreRepository.GetCustomerPopularGenre(id));
         }
+        /// <summary>
+        /// Five Separate printing methods to use in the testing methods.
+        /// </summary>
+        /// <param name="customerCountries"></param>
         static void PrintCustomersBy(IEnumerable<CustomerCountry> customerCountries)
         {
             foreach (CustomerCountry country in customerCountries)

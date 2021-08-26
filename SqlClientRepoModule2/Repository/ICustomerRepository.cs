@@ -12,6 +12,6 @@ namespace SqlClientRepoModule2.Repository
         public Customer GetCustomerByName(string name);
         public List<Customer>ReturnPageOfCustomers(int limit, int offset);
         public Customer AddNewCustomer(Customer customer);
-        public Customer UpdateCustomer(Customer customer);
+        public Customer UpdateCustomerFirstName(Customer customer);
     }
 }

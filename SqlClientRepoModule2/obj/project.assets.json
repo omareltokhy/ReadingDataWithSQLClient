@@ -1778,24 +1778,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ville.hotakainen\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\omar.el.tokhy\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ville.hotakainen\\source\\repos\\SqlClientRepoModule2\\SqlClientRepoModule2\\SqlClientRepoModule2.csproj",
+      "projectUniqueName": "C:\\Users\\omar.el.tokhy\\Source\\Repos\\module_2_reading_data_sql_client\\SqlClientRepoModule2\\SqlClientRepoModule2.csproj",
       "projectName": "SqlClientRepoModule2",
-      "projectPath": "C:\\Users\\ville.hotakainen\\source\\repos\\SqlClientRepoModule2\\SqlClientRepoModule2\\SqlClientRepoModule2.csproj",
-      "packagesPath": "C:\\Users\\ville.hotakainen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ville.hotakainen\\source\\repos\\SqlClientRepoModule2\\SqlClientRepoModule2\\obj\\",
+      "projectPath": "C:\\Users\\omar.el.tokhy\\Source\\Repos\\module_2_reading_data_sql_client\\SqlClientRepoModule2\\SqlClientRepoModule2.csproj",
+      "packagesPath": "C:\\Users\\omar.el.tokhy\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\omar.el.tokhy\\Source\\Repos\\module_2_reading_data_sql_client\\SqlClientRepoModule2\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ville.hotakainen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\omar.el.tokhy\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

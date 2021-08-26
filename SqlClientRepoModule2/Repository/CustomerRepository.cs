@@ -9,6 +9,12 @@ namespace SqlClientRepoModule2.Repository
 {
     public class CustomerRepository : ICustomerRepository
     {
+        /// <summary>
+        /// A method that inserts a new customer into database with values of firstname, lastname,
+        /// country, email, phone and postal code. Returns customer info to console.
+        /// </summary>
+        /// <param name="customer"></param>
+        /// <returns></returns>
         public Customer AddNewCustomer(Customer customer)
         {
             string sql = "INSERT INTO Customer (FirstName, LastName, Country, Email, Phone, PostalCode) VALUES (@FirstName, @LastName, @Country, @Email, @PhoneNumber, @PostalCode)";
@@ -32,6 +38,11 @@ namespace SqlClientRepoModule2.Repository
             }
             return customer;
         }
+        /// <summary>
+        /// A method that gets all customers from the database and returns their CustomerID,
+        /// FirstName, LastName, Country, Email, Phone and PostalCode to console.
+        /// </summary>
+        /// <returns></returns>
         public List<Customer> GetAllCustomers()
         {
             List<Customer> customerList = new List<Customer>();
@@ -63,6 +74,11 @@ namespace SqlClientRepoModule2.Repository
             }
             return customerList;
         }
+        /// <summary>
+        /// A method that returns a specifies customer info from database by customers id.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public Customer GetCustomer(int id)
         {
             Customer customer = new Customer();
@@ -92,6 +108,12 @@ namespace SqlClientRepoModule2.Repository
             }
             return customer;
         }
+        /// <summary>
+        /// A method that returns a specifies customer info from database by customers name. Responds
+        /// to partial matches of the name too.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public Customer GetCustomerByName(string name)
         {
             Customer customer = new Customer();
@@ -121,6 +143,13 @@ namespace SqlClientRepoModule2.Repository
             }
             return customer;
         }
+        /// <summary>
+        /// Returns a page of customers. With parameters you can specify from where you
+        /// want to start the list and where you want to end.
+        /// </summary>
+        /// <param name="limit"></param>
+        /// <param name="offset"></param>
+        /// <returns></returns>
         public List<Customer> ReturnPageOfCustomers(int limit, int offset)
         {
             List<Customer> customerList = new List<Customer>();
@@ -155,7 +184,12 @@ namespace SqlClientRepoModule2.Repository
             }
             return customerList;
         }
-        public Customer UpdateCustomer(Customer customer)
+        /// <summary>
+        /// Updates customers first name in the database by CustomerId. 
+        /// </summary>
+        /// <param name="customer"></param>
+        /// <returns></returns>
+        public Customer UpdateCustomerFirstName(Customer customer)
         {
             string sql = "UPDATE Customer SET FirstName = @NewFirstName WHERE CustomerID = @CustomerID";
 

@@ -8,6 +8,11 @@ namespace SqlClientRepoModule2.Repository
 {
     class CustomerCountryRepository : ICustomersCountryRepository
     {
+        /// <summary>
+        /// Gets customers by country from Chinook database and shows how many customers the
+        /// country has and prints the results to console in descending order.
+        /// </summary>
+        /// <returns></returns>
         public List<CustomerCountry> GetCustomersByCountry()
         {
             List<CustomerCountry> list = new List<CustomerCountry>();
