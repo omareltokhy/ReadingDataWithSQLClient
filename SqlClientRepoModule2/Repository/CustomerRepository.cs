@@ -24,7 +24,7 @@ namespace SqlClientRepoModule2.Repository
                 cmd.Parameters.AddWithValue("@PhoneNumber", customer.PhoneNumber);
                 cmd.Parameters.AddWithValue("@PostalCode", customer.PostalCode);
                 cmd.ExecuteNonQuery();
-                
+
             }
             catch (SqlException ex)
             {
@@ -32,7 +32,6 @@ namespace SqlClientRepoModule2.Repository
             }
             return customer;
         }
-
         public List<Customer> GetAllCustomers()
         {
             List<Customer> customerList = new List<Customer>();
@@ -64,7 +63,6 @@ namespace SqlClientRepoModule2.Repository
             }
             return customerList;
         }
-
         public Customer GetCustomer(int id)
         {
             Customer customer = new Customer();
@@ -80,7 +78,6 @@ namespace SqlClientRepoModule2.Repository
                 while (reader.Read())
                 {
                     customer.CustomerID = reader.GetInt32(0);
-                    customer.CustomerID = reader.GetInt32(0);
                     customer.FirstName = reader.GetString(1);
                     customer.LastName = reader.GetString(2);
                     customer.Country = reader.GetString(3);
@@ -95,7 +92,6 @@ namespace SqlClientRepoModule2.Repository
             }
             return customer;
         }
-
         public Customer GetCustomerByName(string name)
         {
             Customer customer = new Customer();
@@ -125,7 +121,6 @@ namespace SqlClientRepoModule2.Repository
             }
             return customer;
         }
-
         public List<Customer> ReturnPageOfCustomers(int limit, int offset)
         {
             List<Customer> customerList = new List<Customer>();
@@ -160,17 +155,6 @@ namespace SqlClientRepoModule2.Repository
             }
             return customerList;
         }
-
-        public List<Customer> GetHighestSpender()
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Customer> GetMostPopularGenre()
-        {
-            throw new NotImplementedException();
-        }
-
         public Customer UpdateCustomer(Customer customer)
         {
             string sql = "UPDATE Customer SET FirstName = @NewFirstName WHERE CustomerID = @CustomerID";

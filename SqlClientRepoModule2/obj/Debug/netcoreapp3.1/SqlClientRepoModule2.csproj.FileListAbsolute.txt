@@ -90,3 +90,9 @@ C:\Users\omar.el.tokhy\Source\Repos\module_2_reading_data_sql_client\SqlClientRe
 C:\Users\omar.el.tokhy\Source\Repos\module_2_reading_data_sql_client\SqlClientRepoModule2\obj\Debug\netcoreapp3.1\SqlClientRepoModule2.dll
 C:\Users\omar.el.tokhy\Source\Repos\module_2_reading_data_sql_client\SqlClientRepoModule2\obj\Debug\netcoreapp3.1\SqlClientRepoModule2.pdb
 C:\Users\omar.el.tokhy\Source\Repos\module_2_reading_data_sql_client\SqlClientRepoModule2\obj\Debug\netcoreapp3.1\SqlClientRepoModule2.genruntimeconfig.cache
+C:\Users\ville.hotakainen\source\repos\SqlClientRepoModule2\SqlClientRepoModule2\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\ville.hotakainen\source\repos\SqlClientRepoModule2\SqlClientRepoModule2\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\ville.hotakainen\source\repos\SqlClientRepoModule2\SqlClientRepoModule2\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\ville.hotakainen\source\repos\SqlClientRepoModule2\SqlClientRepoModule2\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\ville.hotakainen\source\repos\SqlClientRepoModule2\SqlClientRepoModule2\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ville.hotakainen\source\repos\SqlClientRepoModule2\SqlClientRepoModule2\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

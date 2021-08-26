@@ -12,7 +12,6 @@ namespace SqlClientRepoModule2.Repository
         {
             List<CustomerCountry> list = new List<CustomerCountry>();
             string sql = "SELECT Country, COUNT(Country) FROM Customer GROUP BY Country ORDER BY COUNT(Country) DESC";
-
             try
             {
                 using SqlConnection conn = new SqlConnection(ConnectionHelper.GetConnectionstring());
