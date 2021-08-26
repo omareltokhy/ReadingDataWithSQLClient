@@ -8,6 +8,13 @@ namespace SqlClientRepoModule2.Repository
 {
     public class CustomerGenreRepository : ICustomerGenreRepository
     {
+        /// <summary>
+        /// Method takes in a integer that corresponds to customerID.
+        /// SQL query access customer, genre, invoice and track tables that is used to calculate how many genre of music that customer with parameter id spurchased.
+        /// Object is created from this data and added to list that is returned by the method.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public List<CustomerGenre> GetCustomerPopularGenre(int id)
         {
             List<CustomerGenre> genreList = new List<CustomerGenre>();
